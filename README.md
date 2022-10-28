@@ -3,6 +3,7 @@
 
 ## Gliederung
 Chapter 01: Grundlagen in Java
+Chapter 02: Kontrollstrukturen
 
 ## Anforderungen
 Du benötigst Java version 8 oder höher
