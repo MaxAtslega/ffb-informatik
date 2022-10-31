@@ -7,7 +7,7 @@ public class Bestell {
         System.out.println("Rechnung des Rechnungsbetrages");
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Bestellwert ind Euro: ");
+        System.out.print("Bestellwert in Euro: ");
         double betrag = Double.parseDouble(input.nextLine());
 
         if(betrag < 200.0) betrag+= 5.50;
@@ -15,7 +15,6 @@ public class Bestell {
         System.out.println("Rechnungsbetrag: "+ betrag);
 
         System.out.println("Programmende Bestell.");
-
 
     }
 }
