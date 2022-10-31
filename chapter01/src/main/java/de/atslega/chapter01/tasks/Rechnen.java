@@ -8,16 +8,16 @@ public class Rechnen {
         Scanner input = new Scanner(System.in);
 
         System.out.print("1. ganze Zahl: ");
-        int zahl1 = Integer.parseInt(input.nextLine());
+        double zahl1 = Double.parseDouble(input.nextLine());
 
         System.out.print("2. ganze zahl: ");
-        int zahl2 = Integer.parseInt(input.nextLine());
+        double zahl2 = Double.parseDouble(input.nextLine());
 
-        System.out.println(zahl1 + " + " + zahl2 + " = "+ (zahl1+zahl2));
-        System.out.println(zahl1 + " - " + zahl2 + " = "+ (zahl1-zahl2));
-        System.out.println(zahl1 + " * " + zahl2 + " = "+ (zahl1*zahl2));
-        System.out.println(zahl1 + " / " + zahl2 + " = "+ (zahl1/zahl2));
-        System.out.println(zahl1 + " % " + zahl2 + " = "+ (zahl1%zahl2));
+        System.out.println(zahl1 + " + " + zahl2 + " = " + (zahl1 + zahl2));
+        System.out.println(zahl1 + " - " + zahl2 + " = " + (zahl1 - zahl2));
+        System.out.println(zahl1 + " * " + zahl2 + " = " + (zahl1 * zahl2));
+        System.out.println(zahl1 + " / " + zahl2 + " = " + (zahl1 / zahl2));
+        System.out.println(zahl1 + " % " + zahl2 + " = " + (zahl1 % zahl2));
 
         System.out.println("Programmende Rechnen.");
     }
