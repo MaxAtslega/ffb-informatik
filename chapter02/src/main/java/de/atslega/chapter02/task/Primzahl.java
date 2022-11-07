@@ -10,7 +10,23 @@ public class Primzahl {
         System.out.print("Ganze Zahl eingeben: ");
         int zahl = Integer.parseInt(scanner.nextLine());
 
-        boolean primzahl = (zahl % 2) != 0 && (zahl % 3) != 0;
+        boolean primzahl = true;
+
+
+
+        if(zahl <= 2) {
+            primzahl = (zahl == 2);
+        } else {
+            int i = 2;
+
+            while (i <= zahl / 2){
+                if(zahl % i == 0){
+                    primzahl = false;
+                    break;
+                }
+                i++;
+            }
+        }
 
         System.out.println(zahl + " ist " + (primzahl ? "eine" : "keine") + " Primzahl");
         System.out.println("Programmende Primzahl");
