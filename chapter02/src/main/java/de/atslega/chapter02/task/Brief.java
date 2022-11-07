@@ -10,10 +10,9 @@ public class Brief {
         System.out.print("Gewicht des Briefes in g: ");
         double gewicht = Double.parseDouble(input.nextLine());
 
-
         double preis = 0;
 
-        if(gewicht <= 20) {
+        if(gewicht <= 20) { //<= = < =
             preis = 1.00;
         } else if (gewicht <= 50) {
             preis = 1.70;
