@@ -19,14 +19,12 @@ public class KinderG {
             if (anzahlKinder == 1) {
                 kindergeld += 70.0;
             }
+
             if (anzahlKinder == 2) {
                 kindergeld += 70.0 + 130.0;
             }
-            if ( anzahlKinder == 3) {
-                kindergeld += 70.0 + 130.0 + 220.0;
-            }
 
-            if ( anzahlKinder >= 4) {
+            if ( anzahlKinder >= 3) {
                 kindergeld += 70.0 + 130.0 + 220.0;
 
                 kindergeld += 240.0*(anzahlKinder-3);
@@ -35,14 +33,12 @@ public class KinderG {
             if (anzahlKinder == 1) {
                 kindergeld += 70.0;
             }
+
             if (anzahlKinder == 2) {
                 kindergeld += 70.0 + 70.0;
             }
-            if ( anzahlKinder == 3) {
-                kindergeld += 70.0 + 70.0 + 140.0;
-            }
 
-            if ( anzahlKinder >= 4) {
+            if ( anzahlKinder >= 3) {
                 kindergeld += 70.0 + 70.0 + 140.0;
 
                 kindergeld += 140.0*(anzahlKinder-3);
