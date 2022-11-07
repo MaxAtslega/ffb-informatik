@@ -23,6 +23,6 @@ public class SumB {
         }
 
         System.out.println("Nach " + (i-1) + " Gliedern ist " + grenzwert + " erreicht. Die Summe ist " + sum);
-        System.out.println("Programmende SumA");
+        System.out.println("Programmende SumB");
     }
 }
