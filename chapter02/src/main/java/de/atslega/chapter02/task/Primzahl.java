@@ -9,7 +9,7 @@ public class Primzahl {
 
         System.out.print("Ganze Zahl eingeben: ");
         int zahl = Integer.parseInt(scanner.nextLine());
-        
+
         boolean primzahl = true;
 
         if(zahl <= 2) {
