@@ -9,16 +9,13 @@ public class Primzahl {
 
         System.out.print("Ganze Zahl eingeben: ");
         int zahl = Integer.parseInt(scanner.nextLine());
-
+        
         boolean primzahl = true;
-
-
 
         if(zahl <= 2) {
             primzahl = (zahl == 2);
         } else {
             int i = 2;
-
             while (i <= zahl / 2){
                 if(zahl % i == 0){
                     primzahl = false;
