@@ -9,7 +9,7 @@ public class Teiler {
 
         System.out.print("Geben Sie eine ganze Zahl ein: ");
         int zahl = Integer.parseInt(scanner.nextLine());
-        
+
         int i = 1;
         do {
             if(zahl % i == 0){
