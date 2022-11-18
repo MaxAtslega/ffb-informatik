@@ -34,7 +34,7 @@ public class NotenZeugnis {
         }
 
         System.out.println("-----");
-        // Noten Durchschnitt berechnen
+        // Notendurchschnitt berechnen
         for (int i = 0; i < schuelerNoten.length; i++) {
             double summeNoten = 0;
             double anzahl = schuelerNoten[i].length;
