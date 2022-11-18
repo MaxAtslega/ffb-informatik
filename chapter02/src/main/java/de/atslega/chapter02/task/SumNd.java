@@ -16,6 +16,8 @@ public class SumNd {
             add+=(1/i);
         }
 
+        Math.pow(2, 2);
+
         System.out.println("Summe ist: " + add);
         System.out.println("Programmende SumNd.");
     }

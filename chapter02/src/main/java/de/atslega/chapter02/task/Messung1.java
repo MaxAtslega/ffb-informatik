@@ -1,7 +1,5 @@
 package de.atslega.chapter02.task;
 
-import java.sql.Struct;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Messung1 {
@@ -18,6 +16,7 @@ public class Messung1 {
         }
 
         int[] ergebnisse = new int[anzahl];
+
         int summe = 0;
         for (int i = 1; i < anzahl+1; i++){
             System.out.print(i+". Ergebnis der Messung: ");
@@ -48,7 +47,6 @@ public class Messung1 {
             if (number < min) {
                 min = number;
             }
-
         }
 
         return min;
