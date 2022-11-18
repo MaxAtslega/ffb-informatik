@@ -12,20 +12,29 @@ public class NotenZeugnis {
 
         double[][] schuelerNoten = new double[anzahlSchueler][];
 
+        // Schüler in die Liste eintragen
         for (int i = 1; i <= anzahlSchueler; i++) {
             System.out.print(i + ". Schüler wie viel Noten: ");
             int noten = scanner.nextInt();
             schuelerNoten[i-1] = new double[noten];
-            System.out.println();
 
+            // Noten in die Liste eintragen
             for (int y = 1; y <= noten; y++) {
                 System.out.print(y + ". Note: ");
                 double note = scanner.nextDouble();
-                schuelerNoten[i-1][y-1] = note;
-                System.out.println();
+
+                // Überprüfe, ob die Note zwischen 1 und 6 ist
+                if (note >= 1 && note <= 6) {
+                    schuelerNoten[i-1][y-1] = note;
+                } else {
+                    System.out.println("Bitte gebe eine Note zwischen 1 und 6 ein.");
+                    y--;
+                }
             }
         }
 
+        System.out.println("-----");
+        // Noten Durchschnitt berechnen
         for (int i = 0; i < schuelerNoten.length; i++) {
             double summeNoten = 0;
             double anzahl = schuelerNoten[i].length;
