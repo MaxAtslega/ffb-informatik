@@ -42,7 +42,7 @@ public class NotenZeugnis {
             for (int y = 0; y < schuelerNoten[i].length; y++) {
                 summeNoten+= schuelerNoten[i][y];
             }
-            
+
             System.out.println(i+1 + ". Schüler: Note " + (summeNoten/anzahl));
         }
 
