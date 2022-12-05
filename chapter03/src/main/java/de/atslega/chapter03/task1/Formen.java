@@ -3,31 +3,31 @@ package de.atslega.chapter03.task1;
 public class Formen {
     public static void main(String[] args) {
         Dreieck dreieck = new Dreieck(-20,-30,-20);
-        System.out.println("Dreieck seiteA: " + dreieck.seiteA);
-        System.out.println("Dreieck seiteB: " + dreieck.seiteB);
-        System.out.println("Dreieck seiteC: " + dreieck.seiteC);
+        System.out.println("Dreieck seiteA: " + dreieck.getSeiteA());
+        System.out.println("Dreieck seiteB: " + dreieck.getSeiteB());
+        System.out.println("Dreieck seiteC: " + dreieck.getSeiteC());
 
         GeraderKreisKegel geraderKreisKegel = new GeraderKreisKegel(-5,-2);
-        System.out.println("GeraderKreisKegel radius: " + geraderKreisKegel.radius);
-        System.out.println("GeraderKreisKegel hoehe: " + geraderKreisKegel.hoehe);
+        System.out.println("GeraderKreisKegel radius: " + geraderKreisKegel.getRadius());
+        System.out.println("GeraderKreisKegel hoehe: " + geraderKreisKegel.getHoehe());
 
         GeraderKreisZylinder geraderKreisZylinder = new GeraderKreisZylinder(-5,-3);
-        System.out.println("GeraderKreisZylinder radius: " + geraderKreisZylinder.radius);
-        System.out.println("GeraderKreisZylinder hoehe: " + geraderKreisZylinder.hoehe);
+        System.out.println("GeraderKreisZylinder radius: " + geraderKreisZylinder.getRadius());
+        System.out.println("GeraderKreisZylinder hoehe: " + geraderKreisZylinder.getHoehe());
 
-        Kreis kreis = new Kreis(-5);
-        System.out.println("Kreis radius: " + kreis.radius);
+        Kreis kreis = new Kreis(1, 2, 5);
+        System.out.println("Kreis radius: " + kreis.getRadius());
 
-        Kugel kugel = new Kugel(-2);
-        System.out.println("Kugel radius: " + kugel.radius);
+        Kugel kugel = new Kugel(2);
+        System.out.println("Kugel radius: " + kugel.getRadius());
 
         Quader quader = new Quader(-3,-55,-4);
-        System.out.println("Quader seiteA: " + quader.seiteA);
-        System.out.println("Quader seiteB: " + quader.seiteB);
-        System.out.println("Quader seiteC: " + quader.seiteC);
+        System.out.println("Quader seiteA: " + quader.getSeiteA());
+        System.out.println("Quader seiteB: " + quader.getSeiteB());
+        System.out.println("Quader seiteC: " + quader.getSeiteC());
 
         Wuerfel wuerfel = new Wuerfel(-4);
-        System.out.println("Wuerfel seiteA: " + wuerfel.seiteA);
+        System.out.println("Wuerfel seiteA: " + wuerfel.getSeiteA());
 
     }
 
