@@ -4,11 +4,11 @@ public class Wuerfel {
     double seiteA;
 
     public Wuerfel(double seiteA) {
-        this.seiteA = seiteA;
+        this.seiteA = seiteA >= 0 ? seiteA : 0;
     }
 
     public void setSeiteA(double seiteA) {
-        this.seiteA = seiteA;
+        this.seiteA = seiteA >= 0 ? seiteA : 0;
     }
 
     public void showOberFlaeche(){

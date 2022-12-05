@@ -6,20 +6,18 @@ public class Quader {
     double seiteC;
 
     public Quader(double seiteA, double seiteB, double seiteC) {
-        this.seiteA = seiteA;
-        this.seiteB = seiteB;
-        this.seiteC = seiteC;
+        this.seiteA = seiteA >= 0 ? seiteA : 0;
+        this.seiteB = seiteB >= 0 ? seiteB : 0;
+        this.seiteC = seiteC >= 0 ? seiteC : 0;
     }
 
     public void setSeiteA(double seiteA) {
-        this.seiteA = seiteA;
+        this.seiteA = seiteA >= 0 ? seiteA : 0;
     }
 
     public void setSeiteB(double seiteB) {
-        this.seiteB = seiteB;
+        this.seiteB = seiteB >= 0 ? seiteB : 0;
     }
 
-    public void setSeiteC(double seiteC) {
-        this.seiteC = seiteC;
-    }
+    public void setSeiteC(double seiteC) { this.seiteC = seiteC >= 0 ? seiteC : 0; }
 }

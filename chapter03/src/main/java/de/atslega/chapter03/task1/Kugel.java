@@ -4,11 +4,11 @@ public class Kugel {
     double radius;
 
     public Kugel(double radius) {
-        this.radius = radius;
+        this.radius = radius >= 0 ? radius : 0;
     }
 
     public void setRadius(double radius) {
-        this.radius = radius;
+        this.radius = radius >= 0 ? radius : 0;
     }
 
     public void showOberFlaeche(){
