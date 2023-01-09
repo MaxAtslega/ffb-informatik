@@ -11,6 +11,24 @@ public class Dreieck {
         this.seiteC = seiteC >= 0 ? seiteC : 0;
     }
 
+    public Dreieck(double seiteA, double seiteB){
+        this.seiteA = seiteA;
+        this.seiteB = seiteB;
+        this.seiteC = 432;
+    }
+
+    public Dreieck(double seiteA){
+        this.seiteA = seiteA;
+        this.seiteB = 22;
+        this.seiteC = 432;
+    }
+
+    public Dreieck(){
+        this.seiteA = 34;
+        this.seiteB = 22;
+        this.seiteC = 432;
+    }
+
     public double getSeiteA() {
         return seiteA;
     }

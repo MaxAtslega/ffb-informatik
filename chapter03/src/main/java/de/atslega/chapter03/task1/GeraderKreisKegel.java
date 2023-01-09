@@ -5,6 +5,7 @@ public class GeraderKreisKegel {
     private double hoehe;
 
     public GeraderKreisKegel(double radius, double hoehe) {
+
         this.radius = radius >= 0 ? radius : 0;
         this.hoehe = hoehe >= 0 ? hoehe : 0;
     }

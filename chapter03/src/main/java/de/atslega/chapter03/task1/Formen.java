@@ -1,8 +1,10 @@
 package de.atslega.chapter03.task1;
 
+import java.util.Arrays;
+
 public class Formen {
     public static void main(String[] args) {
-        Dreieck dreieck = new Dreieck(-20,-30,-20);
+        Dreieck dreieck = new Dreieck(2,3,4);
         System.out.println("Dreieck seiteA: " + dreieck.getSeiteA());
         System.out.println("Dreieck seiteB: " + dreieck.getSeiteB());
         System.out.println("Dreieck seiteC: " + dreieck.getSeiteC());
