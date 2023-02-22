@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Rennschnecke:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Rennschnecke_jar</output-path>
+    <root id="archive" name="Rennschnecke.jar">
+      <element id="module-output" name="Rennschnecke" />
+    </root>
+  </artifact>
+</component>

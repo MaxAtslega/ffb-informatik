@@ -54,7 +54,7 @@ public class Rennen {
     }
 
     public String toString(){
-        return String.format("Name: %s, AnzahlDerTeilnehmendenSchnecken: %s, Teilnehmenden Schnecken: [(%s)]", name, anzahlDerTeilnehmendenSchnecken, teilnehmendenSchnecken.stream().map(Rennschnecke::toString).collect(Collectors.joining("), (")));
+        return String.format("Name: %s, AnzahlDerTeilnehmendenSchnecken: %s, Teilnehmenden Schnecken: [(%s)]", name, anzahlDerTeilnehmendenSchnecken, teilnehmendenSchnecken.stream().map(Rennschnecke::toString).collect(Collectors.joining(")\n (")));
     }
 
 }

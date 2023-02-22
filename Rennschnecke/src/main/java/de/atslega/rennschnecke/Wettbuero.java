@@ -31,7 +31,6 @@ public class Wettbuero {
         }
 
         for (Wette wette : angenommenenWetten){
-            System.out.println(wette.toString());
             for (Rennschnecke rennschnecke : rennschnecken){
                 if(wette.getSchneckenName().contains(rennschnecke.getName())){
                     wette.setGewinn(wette.getWettEinsatz()*multiplikationsFaktorBeiGewonnenenspielen);
