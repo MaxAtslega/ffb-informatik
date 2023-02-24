@@ -7,28 +7,28 @@ import java.util.ArrayList;
 
 public class Arzt extends Angestellter {
     private String fachgebiet;
-    private Behandlungszimmer aktuellesBehandlungszimmer;
+    private Behandlungszimmer aktuellesBehandlungszimer;
     private Arztpraxis arztpraxis;
 
-    public Arzt(String fachgebiet, Behandlungszimmer aktuellesBehandlungszimmer, Arztpraxis arztpraxis) {
+    public Arzt(String name, String geschlecht, double gehalt, String fachgebiet, Arztpraxis arztpraxis) {
+        super(name, geschlecht, gehalt);
         this.fachgebiet = fachgebiet;
-        this.aktuellesBehandlungszimmer = aktuellesBehandlungszimmer;
         this.arztpraxis = arztpraxis;
-
-        ArrayList<Arzt> arzts = new ArrayList<>();
-
-
     }
 
-    public void behandlungszimmerBesetzen(){
-
+    public void behandlungszimmerBesetzen(Behandlungszimmer behandlungszimmer){
+        this.aktuellesBehandlungszimer = behandlungszimmer;
+        behandlungszimmer.setArzt(this);
     }
 
-    public void behandlungszimmerVerlassen() {
-
+    public void behandlungszimmerverlassen(){
+        this.aktuellesBehandlungszimer = null;
+        behandlungszimmer.setArzt(null);
     }
-
-    public void patientAufrufen() {
-
+    public void patientBehandeln(Patient patient){
+        aktuellesBehandlungszimer.setPatient(patient);
+    }
+    public void patientAufrufen(Patient patient){
     }
 }
+

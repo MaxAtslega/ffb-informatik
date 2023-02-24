@@ -1,8 +1,7 @@
 package de.atslega.arztpraxis;
 
-import de.atslega.arztpraxis.personen.Angestellter;
 import de.atslega.arztpraxis.personen.Arzt;
-import de.atslega.arztpraxis.personen.Arzthaelfer;
+import de.atslega.arztpraxis.personen.Arzthelfer;
 import de.atslega.arztpraxis.personen.Patient;
 import de.atslega.arztpraxis.raum.Behandlungszimmer;
 import de.atslega.arztpraxis.raum.Wartezimmer;
@@ -10,43 +9,45 @@ import de.atslega.arztpraxis.raum.Wartezimmer;
 import java.util.ArrayList;
 
 public class Arztpraxis {
-    private ArrayList<Arzt> arzte;
-    private ArrayList<Arzthaelfer> arzthaelfer;
+    private ArrayList<Arzt> aerzte;
+    private ArrayList<Arzthelfer> arzthelfer;
     private ArrayList<Patient> patienten;
     private Wartezimmer wartezimmer;
+    private ArrayList<Behandlungszimmer> behandlungszimmer;
 
-    public Arztpraxis(ArrayList<Arzt> arzte, ArrayList<Arzthaelfer> arzthaelfer, ArrayList<Patient> patienten, Wartezimmer wartezimmer, ArrayList<de.atslega.arztpraxis.raum.Behandlungszimmer> behandlungszimmer) {
-        this.arzte = arzte;
-        this.arzthaelfer = arzthaelfer;
+    public Arztpraxis(ArrayList<Arzt> aerzte, ArrayList<Arzthelfer> arzthelfer, ArrayList<Patient> patienten, Wartezimmer wartezimmer, ArrayList<Behandlungszimmer> behandlungszimmer) {
+        this.aerzte = aerzte;
+        this.arzthelfer = arzthelfer;
         this.patienten = patienten;
         this.wartezimmer = wartezimmer;
+        this.behandlungszimmer = behandlungszimmer;
+    }
+    public ArrayList<Arzt> getAerzte() {
+        return aerzte;
     }
 
-    public void arztEinstellen(Arzt arzt){
-        arzte.add(arzt);
+    public ArrayList<Arzthelfer> getArzthelfer() {
+        return arzthelfer;
     }
 
-    public void arzthelferEinstellen(Arzthaelfer arzthaelfer){
-        this.arzthaelfer.add(arzthaelfer);
+    public ArrayList<Patient> getPatienten() {
+        return patienten;
     }
 
-    public void arzthelferKuendigen(Arzthaelfer arzthaelfer){
-        this.arzthaelfer.remove(arzthaelfer);
+    public Wartezimmer getWartezimmer() {
+        return wartezimmer;
     }
 
-    public ArrayList<Arzt> getArzte() {
-        return arzte;
+    public ArrayList<Behandlungszimmer> getBehandlungszimmer() {
+        return behandlungszimmer;
     }
 
-    public ArrayList<Arzthaelfer> getArzthaelfer() {
-        return arzthaelfer;
-    }
 
     @Override
     public String toString() {
         return "Arztpraxis{" +
-                "arzte=" + arzte +
-                ", arzthaelfer=" + arzthaelfer +
+                "arzte=" + aerzte +
+                ", arzthelfer=" + arzthelfer +
                 ", patienten=" + patienten +
                 ", wartezimmer=" + wartezimmer +
                 '}';

@@ -1,13 +1,31 @@
 package de.atslega.arztpraxis.personen;
 
-public class Patient extends Person{
+public class Patient extends Person {
     private int alter;
-    private boolean chronischeKrank;
+    private boolean chronischKrank;
 
-    public Patient(int alter, boolean chronischeKrank) {
+    public Patient(String name, String geschlecht, int alter, boolean chronischKrank) {
+        super(name, geschlecht);
         this.alter = alter;
-        this.chronischeKrank = chronischeKrank;
+        this.chronischKrank = chronischKrank;
     }
+
+    public void beiPraxisAnmelden(){
+
+    }
+
+    public void pruefeKrankheit() {
+        if (chronischKrank = true) {
+            System.out.println("Ist chronischKrank");
+
+        } else {
+            System.out.println("Ist nicht chronisch Krak");
+        }
+    }
+    public String getName() {
+        return name;
+    }
+}
 
     public int getAlter() {
         return alter;
@@ -18,14 +36,10 @@ public class Patient extends Person{
     }
 
     public boolean isChronischeKrank() {
-        return chronischeKrank;
+        return chronischKrank;
     }
 
-    public void setChronischeKrank(boolean chronischeKrank) {
-        this.chronischeKrank = chronischeKrank;
-    }
-
-    public void beiPraxisAnmelden(){
-
+    public void setChronischeKrank(boolean chronischKrank) {
+        this.chronischKrank = chronischKrank;
     }
 }
