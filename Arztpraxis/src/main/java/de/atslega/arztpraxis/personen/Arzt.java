@@ -23,12 +23,12 @@ public class Arzt extends Angestellter {
 
     public void behandlungszimmerverlassen(){
         this.aktuellesBehandlungszimer = null;
-        behandlungszimmer.setArzt(null);
     }
     public void patientBehandeln(Patient patient){
         aktuellesBehandlungszimer.setPatient(patient);
     }
     public void patientAufrufen(Patient patient){
+        return;
     }
 }
 

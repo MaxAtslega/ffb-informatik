@@ -8,8 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="chapter01" />
         <module name="chapter02" />
+        <module name="rennschnecke" />
         <module name="Arztpraxis" />
         <module name="Rennschnecke" />
+        <module name="arztpraxis" />
         <module name="chapter03" />
       </profile>
     </annotationProcessing>

@@ -1,5 +1,6 @@
 package de.atslega.arztpraxis;
 
+import de.atslega.arztpraxis.personen.Angestellter;
 import de.atslega.arztpraxis.personen.Arzt;
 import de.atslega.arztpraxis.personen.Arzthelfer;
 import de.atslega.arztpraxis.personen.Patient;
@@ -42,6 +43,21 @@ public class Arztpraxis {
         return behandlungszimmer;
     }
 
+    public void angestelltenKuendigen(Angestellter angestellter){
+        if(angestellter instanceof Arzt){
+            aerzte.remove(angestellter);
+        } else if (angestellter instanceof Arzthelfer){
+            arzthelfer.remove(angestellter);
+        }
+    }
+
+    public void arztEinstellen(Arzt arzt){
+        aerzte.add(arzt);
+    }
+
+    public void arzthelferEinstellen(Arzthelfer arzt){
+        arzthelfer.add(arzt);
+    }
 
     @Override
     public String toString() {

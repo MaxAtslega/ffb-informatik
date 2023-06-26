@@ -25,7 +25,6 @@ public class Patient extends Person {
     public String getName() {
         return name;
     }
-}
 
     public int getAlter() {
         return alter;

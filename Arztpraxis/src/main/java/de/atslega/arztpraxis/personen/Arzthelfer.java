@@ -20,7 +20,7 @@ public class Arzthelfer extends Angestellter {
     public void patientInsBehandlungszimmerSchicken(Patient patient, Behandlungszimmer behandlungszimmer){
         for (Behandlungszimmer behandlungszimmerFromList : arztpraxis.getBehandlungszimmer()) {
             if(behandlungszimmerFromList == behandlungszimmer){
-                behandlungszimmer.setPatient(patient);
+                behandlungszimmerFromList.setPatient(patient);
             }
         }
     }

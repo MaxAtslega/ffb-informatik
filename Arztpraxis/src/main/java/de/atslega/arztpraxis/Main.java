@@ -1,9 +1,11 @@
 package de.atslega.arztpraxis;
 
+import de.atslega.arztpraxis.personen.Angestellter;
 import de.atslega.arztpraxis.personen.Arzt;
 import de.atslega.arztpraxis.personen.Arzthelfer;
 import de.atslega.arztpraxis.personen.Patient;
 import de.atslega.arztpraxis.raum.Behandlungszimmer;
+import de.atslega.arztpraxis.raum.BehandlungszimmerTyp;
 import de.atslega.arztpraxis.raum.Wartezimmer;
 
 import java.util.ArrayList;
@@ -24,15 +26,18 @@ public class Main {
         Arzthelfer max = new Arzthelfer(10 , arztpraxis, "Max", "M");
         Patient samuel = new Patient("Samuel", "M", 16, true);
 
-        Behandlungszimmer behandlungszimmer1 = new Behandlungszimmer(1, 2, 10, "Fußbehandlung");
+        Behandlungszimmer behandlungszimmer1 = new Behandlungszimmer(1, 2, 10, BehandlungszimmerTyp.Roentgenraum);
 
-        arztpraxis.getAerzte().add(new Arzt("Karl", "M", 10.5, "Katze", arztpraxis));
+        arztpraxis.arztEinstellen(new Arzt("Karl", "M", 10.5, "Katze", arztpraxis));
         arztpraxis.getBehandlungszimmer().add(behandlungszimmer1);
-        arztpraxis.getArzthelfer().add(max);
+        arztpraxis.arzthelferEinstellen(max);
         arztpraxis.getPatienten().add(samuel);
 
         max.patientInsWartezimmerSchicken(samuel);
+
         max.patientInsBehandlungszimmerSchicken(samuel, behandlungszimmer1);
+
+        arztpraxis.angestelltenKuendigen(max);
 
         for (Patient patientIm : wartezimmer.getPatientenImZimmer()) {
             System.out.println(patientIm.getName());

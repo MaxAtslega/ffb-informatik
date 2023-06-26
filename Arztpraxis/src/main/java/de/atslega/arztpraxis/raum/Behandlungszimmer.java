@@ -4,11 +4,11 @@ import de.atslega.arztpraxis.personen.Arzt;
 import de.atslega.arztpraxis.personen.Patient;
 
 public class Behandlungszimmer extends Raum {
-    private String funktion;
+    private BehandlungszimmerTyp funktion;
     private Arzt arzt;
     private Patient patient;
 
-    public Behandlungszimmer(int anzahlTueren, int anzahlFenster, double flaeche, String funktion) {
+    public Behandlungszimmer(int anzahlTueren, int anzahlFenster, double flaeche, BehandlungszimmerTyp funktion) {
         super(anzahlTueren, anzahlFenster, flaeche);
         this.funktion = funktion;
     }
