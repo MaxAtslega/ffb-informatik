@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="chapter01" />
+        <module name="chapter02" />
+        <module name="rennschnecke" />
+        <module name="Arztpraxis" />
+        <module name="Rennschnecke" />
+        <module name="arztpraxis" />
+        <module name="chapter03" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="chapter-01" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

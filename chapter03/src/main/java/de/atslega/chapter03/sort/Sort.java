@@ -12,9 +12,9 @@ public class Sort {
         ArrayList<Long[]> selectionSort = new ArrayList<>();
         ArrayList<Long[]> javaSort = new ArrayList<>();
 
-        int runs = 1_000;
-        int size = 1_000;
-        int range = 10;
+        int runs = 10_000;
+        int size = 5;
+        int range = 100;
 
         for (int i = 1; i <= runs; i++) {
             int[] randomArray = new Random().ints(size, 0, range).toArray();
@@ -103,10 +103,8 @@ public class Sort {
             int index = i;
             for (int j = i + 1; j < arr.length; j++){
                 if (arr[j] < arr[index]){
-                    swapCount++;
                     index = j;
                 }
-                compareCount++;
             }
             int smallerNumber = arr[index];
             arr[index] = arr[i];
@@ -120,7 +118,7 @@ public class Sort {
     }
 
     // Stabilität / In-Place
-    public static int[] bubbleSort(int arr[]) {
+    public static int[] bubbleSort(int[] arr) {
         int compareCount = 0;
         int swapCount = 0;
 
