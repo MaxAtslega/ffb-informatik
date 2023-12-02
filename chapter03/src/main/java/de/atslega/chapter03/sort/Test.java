@@ -1,7 +1,5 @@
 package de.atslega.chapter03.sort;
 
-import java.util.Objects;
-
 public class Test {
     public static void main(String[] args) {
         String t = "abcd";
@@ -19,7 +17,7 @@ public class Test {
 
         persons[1] = new Person("Ina", "Fox", "test@mail.de");
 
-        for (Person person : persons){
+        for (Person person : persons) {
             System.out.println(person);
         }
     }
@@ -48,9 +46,9 @@ public class Test {
 
     // In-Place
     public static void selectionSort(Person[] arr) {
-        for (int i = 0; i < arr.length - 1; i++)  {
+        for (int i = 0; i < arr.length - 1; i++) {
             int index = i;
-            for (int j = i + 1; j < arr.length; j++){
+            for (int j = i + 1; j < arr.length; j++) {
                 if (arr[j].getName().compareTo(arr[index].getName()) < 0 ||
                         (arr[j].getName().equals(arr[index].getName()) &&
                                 arr[j].getForename().compareTo(arr[index].getForename()) < 0)) {
@@ -68,13 +66,13 @@ public class Test {
         int n = arr.length;
         for (int i = 0; i < n - 1; i++)
             for (int j = 0; j < n - i - 1; j++)
-                if (arr[j].getName().compareTo(arr[j+1].getName()) > 0 ||
-                        (arr[j].getName().equals(arr[j+1].getName()) &&
-                                arr[j].getForename().compareTo(arr[j+1].getForename()) > 0)) {
+                if (arr[j].getName().compareTo(arr[j + 1].getName()) > 0 ||
+                        (arr[j].getName().equals(arr[j + 1].getName()) &&
+                                arr[j].getForename().compareTo(arr[j + 1].getForename()) > 0)) {
                     Person temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
-                    System.out.println(arr[j] + "  - "+arr[j + 1]);
+                    System.out.println(arr[j] + "  - " + arr[j + 1]);
                 }
     }
 }
@@ -94,12 +92,12 @@ class Person {
         return name;
     }
 
-    public String getForename() {
-        return forename;
-    }
-
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getForename() {
+        return forename;
     }
 
     public void setForename(String forename) {

@@ -19,7 +19,7 @@ public class Sort {
         for (int i = 1; i <= runs; i++) {
             int[] randomArray = new Random().ints(size, 0, range).toArray();
 
-            System.out.println("("+i+") Sort");
+            System.out.println("(" + i + ") Sort");
             long startInsertionSort = System.nanoTime();
             int[] array1 = insertionSort(randomArray.clone());
             long endInsertionSort = System.nanoTime();
@@ -63,29 +63,29 @@ public class Sort {
 
         double javaSortTimeAverage = javaSort.stream().mapToDouble(d -> d[0]).average().orElse(0.0);
 
-        System.out.println("Average-Case of "+runs+" runs with a size of "+size+":");
-        System.out.println("- Selection Sort: Time: "+ selectionSortTimeAverage + "ns Compare: "+ selectionSortCompareAverage + " Swap: "+ selectionSortSwapAverage);
-        System.out.println("- Insertion Sort: Time: "+ insertionSortTimeAverage + "ns Compare: "+ insertionSortCompareAverage + " Swap: "+ insertionSortSwapAverage);
-        System.out.println("- Bubble Sort: Time: "+ bubbleSortTimeAverage + "ns Compare: "+ bubbleSortCompareAverage + " Swap: "+ bubbleSortSwapAverage);
-        System.out.println("- Java Sort: Time: "+ javaSortTimeAverage + "ns");
+        System.out.println("Average-Case of " + runs + " runs with a size of " + size + ":");
+        System.out.println("- Selection Sort: Time: " + selectionSortTimeAverage + "ns Compare: " + selectionSortCompareAverage + " Swap: " + selectionSortSwapAverage);
+        System.out.println("- Insertion Sort: Time: " + insertionSortTimeAverage + "ns Compare: " + insertionSortCompareAverage + " Swap: " + insertionSortSwapAverage);
+        System.out.println("- Bubble Sort: Time: " + bubbleSortTimeAverage + "ns Compare: " + bubbleSortCompareAverage + " Swap: " + bubbleSortSwapAverage);
+        System.out.println("- Java Sort: Time: " + javaSortTimeAverage + "ns");
 
     }
 
     // Stabilität / In-Place
-    public static int[] insertionSort(int[] list){
+    public static int[] insertionSort(int[] list) {
         int n = list.length;
         int compareCount = 0;
         int swapCount = 0;
-        for(int k=1; k<n-1; k++)   {
+        for (int k = 1; k < n - 1; k++) {
             int temp = list[k];
-            int j = k-1;
-            while(j>=0 && temp <= list[j])   {
-                list[j+1] = list[j];
+            int j = k - 1;
+            while (j >= 0 && temp <= list[j]) {
+                list[j + 1] = list[j];
                 swapCount++;
                 j--;
             }
             compareCount++;
-            list[j+1] = temp;
+            list[j + 1] = temp;
         }
 
         // System.out.println("- Compare: " + compareCount);
@@ -99,10 +99,10 @@ public class Sort {
         int compareCount = 0;
         int swapCount = 0;
 
-        for (int i = 0; i < arr.length - 1; i++)  {
+        for (int i = 0; i < arr.length - 1; i++) {
             int index = i;
-            for (int j = i + 1; j < arr.length; j++){
-                if (arr[j] < arr[index]){
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[j] < arr[index]) {
                     index = j;
                 }
             }
@@ -124,7 +124,7 @@ public class Sort {
 
         int n = arr.length;
         for (int i = 0; i < n - 1; i++)
-            for (int j = 0; j < n - i - 1; j++){
+            for (int j = 0; j < n - i - 1; j++) {
                 if (arr[j] > arr[j + 1]) {
                     int temp = arr[j];
                     arr[j] = arr[j + 1];

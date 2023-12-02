@@ -17,7 +17,7 @@ public class Wiederstand {
         System.out.print("R2 in Ohm: ");
         double r2 = Double.parseDouble(input.nextLine());
 
-        if(schaltung.equals("P")){
+        if (schaltung.equals("P")) {
             double ergebnis = (r1 * r2) / (r1 + r2);
             System.out.println("Das Gesamtwert der Parallelschaltung ist " + ergebnis + " Ohm");
         } else if (schaltung.equals("R")) {

@@ -6,20 +6,20 @@ public class LinkedList {
     private ListNode anchor = null;
     private ListNode current = null;
 
-    public LinkedList(){
+    public LinkedList() {
 
     }
 
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return anchor == null;
     }
 
-    public boolean hasAccess(){
+    public boolean hasAccess() {
         return current != null;
     }
 
-    public void next(){
-        if(hasAccess()){
+    public void next() {
+        if (hasAccess()) {
             current = current.getNext();
         }
     }
@@ -28,21 +28,21 @@ public class LinkedList {
         current = anchor;
     }
 
-    public void toLast(){
-        if (hasAccess()){
-            while (current.getNext() != null){
+    public void toLast() {
+        if (hasAccess()) {
+            while (current.getNext() != null) {
                 next();
             }
         }
     }
 
-    public void append(Element element){
+    public void append(Element element) {
         ListNode newElement = new ListNode(element, null, null);
 
-        if (isEmpty()){
+        if (isEmpty()) {
             current = newElement;
             anchor = newElement;
-        }else{
+        } else {
             toLast();
             newElement.setPrevious(current);
             current.setNext(newElement);
@@ -50,13 +50,13 @@ public class LinkedList {
         }
     }
 
-    public void insert(Element element){
-        if (hasAccess()){
+    public void insert(Element element) {
+        if (hasAccess()) {
             ListNode newElement = new ListNode(element, current.getPrevious(), current);
 
-            if (current.getPrevious() != null){
+            if (current.getPrevious() != null) {
                 current.setNext(newElement);
-            }else {
+            } else {
                 current.setPrevious(newElement);
                 anchor = newElement;
             }
@@ -65,19 +65,19 @@ public class LinkedList {
         }
     }
 
-    public void remove(){
-        if (hasAccess()){
+    public void remove() {
+        if (hasAccess()) {
             ListNode previousElement = current.getPrevious();
             ListNode nextElement = current.getNext();
 
-            if (previousElement == null){
+            if (previousElement == null) {
                 anchor = nextElement;
             } else {
                 previousElement.setNext(nextElement);
             }
 
 
-            if (nextElement == null){
+            if (nextElement == null) {
                 current = previousElement;
             } else {
                 nextElement.setPrevious(previousElement);

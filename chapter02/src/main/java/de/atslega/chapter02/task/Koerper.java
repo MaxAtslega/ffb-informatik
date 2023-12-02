@@ -3,14 +3,14 @@ package de.atslega.chapter02.task;
 import java.util.Scanner;
 
 public class Koerper {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println("Berechnen von Volumen/Oberfläche div. Körper");
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Bitte wählen sie  (Z)ylinder, (W)ürfel, (Q)uader, (K)reiskegel oder K(u)gel: ");
         String wahl = scanner.nextLine();
 
-        System.out.println("Ihre Wahl: "+wahl);
+        System.out.println("Ihre Wahl: " + wahl);
 
         System.out.print("Kantenlänge in cm ");
         Double kantenlänge = Double.parseDouble(scanner.nextLine());

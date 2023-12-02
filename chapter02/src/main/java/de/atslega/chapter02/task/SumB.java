@@ -13,16 +13,16 @@ public class SumB {
 
         int i = 1;
         int sum = 0;
-        while (sum <= grenzwert){
-            if(i % 2 == 0){
-                sum-=i;
+        while (sum <= grenzwert) {
+            if (i % 2 == 0) {
+                sum -= i;
             } else {
-                sum+=i;
+                sum += i;
             }
             i++;
         }
 
-        System.out.println("Nach " + (i-1) + " Gliedern ist " + grenzwert + " erreicht. Die Summe ist " + sum);
+        System.out.println("Nach " + (i - 1) + " Gliedern ist " + grenzwert + " erreicht. Die Summe ist " + sum);
         System.out.println("Programmende SumB");
     }
 }

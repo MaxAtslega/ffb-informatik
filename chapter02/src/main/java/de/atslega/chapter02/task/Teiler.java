@@ -12,8 +12,8 @@ public class Teiler {
 
         int i = 1;
         do {
-            if(zahl % i == 0){
-                System.out.print(i+" ");
+            if (zahl % i == 0) {
+                System.out.print(i + " ");
             }
             i++;
         } while (i <= zahl);

@@ -15,7 +15,7 @@ public class Summe {
 
         ergebnis = zahl1 + zahl2;
 
-        System.out.println("Die Summe von "+ zahl1+ " und " + zahl2 + " ist: "+ ergebnis);
+        System.out.println("Die Summe von " + zahl1 + " und " + zahl2 + " ist: " + ergebnis);
 
         System.out.println("Programmende Summe.");
     }

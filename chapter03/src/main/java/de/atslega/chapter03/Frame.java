@@ -7,14 +7,14 @@ import java.awt.*;
 
 public class Frame extends JFrame {
 
-    public Frame(){
+    public Frame() {
         setTitle("Test");
         setSize(800, 450);
         setVisible(true);
     }
 
     @Override
-    public void paint(Graphics g){
+    public void paint(Graphics g) {
         Kreis kreis1 = new Kreis(100, 100, 50);
         kreis1.draw(g);
 

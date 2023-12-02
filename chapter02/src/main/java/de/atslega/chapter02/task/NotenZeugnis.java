@@ -16,7 +16,7 @@ public class NotenZeugnis {
         for (int i = 1; i <= anzahlSchueler; i++) {
             System.out.print(i + ". Schüler wie viel Noten: ");
             int noten = scanner.nextInt();
-            schuelerNoten[i-1] = new double[noten];
+            schuelerNoten[i - 1] = new double[noten];
 
             // Noten in die Liste eintragen
             for (int y = 1; y <= noten; y++) {
@@ -25,7 +25,7 @@ public class NotenZeugnis {
 
                 // Überprüfe, ob die Note zwischen 1 und 6 ist
                 if (note >= 1 && note <= 6) {
-                    schuelerNoten[i-1][y-1] = note;
+                    schuelerNoten[i - 1][y - 1] = note;
                 } else {
                     System.out.println("Bitte gebe eine Note zwischen 1 und 6 ein.");
                     y--;
@@ -40,10 +40,10 @@ public class NotenZeugnis {
             double anzahl = schuelerNoten[i].length;
 
             for (int y = 0; y < schuelerNoten[i].length; y++) {
-                summeNoten+= schuelerNoten[i][y];
+                summeNoten += schuelerNoten[i][y];
             }
 
-            System.out.println(i+1 + ". Schüler: Note " + (summeNoten/anzahl));
+            System.out.println(i + 1 + ". Schüler: Note " + (summeNoten / anzahl));
         }
 
     }

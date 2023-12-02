@@ -12,8 +12,8 @@ public class SumNc {
         int zahl = Integer.parseInt(scanner.nextLine());
 
         int add = 0;
-        for (int i = 1; i <= zahl; i++){
-            add+=(2*i)*(2*i);
+        for (int i = 1; i <= zahl; i++) {
+            add += (2 * i) * (2 * i);
         }
 
         System.out.println("Summe ist: " + add);

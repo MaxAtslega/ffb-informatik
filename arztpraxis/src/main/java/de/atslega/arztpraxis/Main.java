@@ -24,7 +24,7 @@ public class Main {
 
         Arztpraxis arztpraxis = new Arztpraxis(aerzte, arzthelfer, patienten, wartezimmer, behandlungszimmer);
 
-        Arzthelfer max = new Arzthelfer(10 , arztpraxis, "Max", "M");
+        Arzthelfer max = new Arzthelfer(10, arztpraxis, "Max", "M");
 
         Patient samuel = new Patient("Samuel", "M", 16, true);
         Patient leon = new Patient("Leon", "M", 19, false);

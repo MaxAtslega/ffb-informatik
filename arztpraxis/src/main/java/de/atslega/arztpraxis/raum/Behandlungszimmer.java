@@ -17,12 +17,12 @@ public class Behandlungszimmer extends Raum {
         return arzt;
     }
 
-    public Patient getPatient() {
-        return patient;
-    }
-
     public void setArzt(Arzt arzt) {
         this.arzt = arzt;
+    }
+
+    public Patient getPatient() {
+        return patient;
     }
 
     public void setPatient(Patient patient) {

@@ -17,7 +17,7 @@ public class Division {
 
         ergebnis = zahl1 / zahl2;
 
-        System.out.println("Das Ergebnis der Division "+ zahl1+ "/" + zahl2 + " ist "+ ergebnis);
+        System.out.println("Das Ergebnis der Division " + zahl1 + "/" + zahl2 + " ist " + ergebnis);
 
         System.out.println("Programmende Subtraktion.");
     }

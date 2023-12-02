@@ -20,7 +20,7 @@ public class Patient extends Person {
         this.priority = false;
     }
 
-    public void beiPraxisAnmelden(){
+    public void beiPraxisAnmelden() {
 
     }
 
@@ -32,6 +32,7 @@ public class Patient extends Person {
             System.out.println("Ist nicht chronisch Krak");
         }
     }
+
     public String getName() {
         return name;
     }

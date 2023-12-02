@@ -3,7 +3,7 @@ package de.atslega.arztpraxis.raum;
 import de.atslega.arztpraxis.personen.Patient;
 import dev.atslega.dds.queue.generic.GenericQueue;
 
-public class Wartezimmer extends Raum{
+public class Wartezimmer extends Raum {
     private int anzahlPlaetze;
     private GenericQueue<Patient> patientenImZimmer;
 

@@ -13,6 +13,15 @@ public class GeraderKreisZylinder {
         return radius;
     }
 
+    public void setRadius(double radius) {
+        this.radius = radius >= 0 ? radius : 0;
+    }
+
+    public void setRadius(String radius) {
+        double cRadius = Double.parseDouble(radius);
+        this.radius = cRadius >= 0 ? cRadius : 0;
+    }
+
     public double getHoehe() {
         return hoehe;
     }
@@ -21,25 +30,16 @@ public class GeraderKreisZylinder {
         this.hoehe = hoehe >= 0 ? hoehe : 0;
     }
 
-    public void setRadius(double radius) {
-        this.radius = radius >= 0 ? radius : 0;
-    }
-
     public void setHoehe(String hoehe) {
         double cHoehe = Double.parseDouble(hoehe);
         this.hoehe = cHoehe >= 0 ? cHoehe : 0;
     }
 
-    public void setRadius(String radius) {
-        double cRadius = Double.parseDouble(radius);
-        this.radius = cRadius >= 0 ? cRadius : 0;
-    }
-
-    public void showOberFlaeche(){
+    public void showOberFlaeche() {
         return;
     }
 
-    public void showVolumen(){
+    public void showVolumen() {
         return;
     }
 }

@@ -12,8 +12,8 @@ public class SumNd {
         int zahl = Integer.parseInt(scanner.nextLine());
 
         int add = 0;
-        for (int i = 1; i <= zahl; i++){
-            add+=(1/i);
+        for (int i = 1; i <= zahl; i++) {
+            add += (1 / i);
         }
 
         Math.pow(2, 2);

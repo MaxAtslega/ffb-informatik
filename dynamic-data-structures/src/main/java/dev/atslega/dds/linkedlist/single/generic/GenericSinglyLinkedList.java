@@ -1,7 +1,6 @@
 package dev.atslega.dds.linkedlist.single.generic;
 
 
-
 public class GenericSinglyLinkedList<T> implements GenericSinglyLinkedListInterface<T> {
 
     private GenericSingleNode<T> anchor = null;

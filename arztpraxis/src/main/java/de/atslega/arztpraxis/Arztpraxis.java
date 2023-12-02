@@ -23,6 +23,7 @@ public class Arztpraxis {
         this.wartezimmer = wartezimmer;
         this.behandlungszimmer = behandlungszimmer;
     }
+
     public ArrayList<Arzt> getAerzte() {
         return aerzte;
     }
@@ -43,19 +44,19 @@ public class Arztpraxis {
         return behandlungszimmer;
     }
 
-    public void angestelltenKuendigen(Angestellter angestellter){
-        if(angestellter instanceof Arzt){
+    public void angestelltenKuendigen(Angestellter angestellter) {
+        if (angestellter instanceof Arzt) {
             aerzte.remove(angestellter);
-        } else if (angestellter instanceof Arzthelfer){
+        } else if (angestellter instanceof Arzthelfer) {
             arzthelfer.remove(angestellter);
         }
     }
 
-    public void arztEinstellen(Arzt arzt){
+    public void arztEinstellen(Arzt arzt) {
         aerzte.add(arzt);
     }
 
-    public void arzthelferEinstellen(Arzthelfer arzt){
+    public void arzthelferEinstellen(Arzthelfer arzt) {
         arzthelfer.add(arzt);
     }
 

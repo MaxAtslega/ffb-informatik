@@ -16,7 +16,7 @@ public class Benzin {
 
         double durchschnitt = kraftstoff / strecke * 100;
 
-        System.out.println("Der Durchschnittsverbrauch ist "+ durchschnitt+ " l/100km");
+        System.out.println("Der Durchschnittsverbrauch ist " + durchschnitt + " l/100km");
 
         System.out.println("Programmende Subtraktion.");
     }

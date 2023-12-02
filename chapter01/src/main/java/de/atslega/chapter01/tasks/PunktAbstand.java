@@ -20,9 +20,9 @@ public class PunktAbstand {
         System.out.print("2.Punkt y: ");
         double punkt2y = Double.parseDouble(input.nextLine());
 
-        double abstand = Math.sqrt((punkt2x - punkt1x)*(punkt2x - punkt1x) + (punkt2y - punkt1y)*(punkt2y - punkt1y));
+        double abstand = Math.sqrt((punkt2x - punkt1x) * (punkt2x - punkt1x) + (punkt2y - punkt1y) * (punkt2y - punkt1y));
 
-        System.out.println("Der Punktabstand: "+ abstand);
+        System.out.println("Der Punktabstand: " + abstand);
 
         System.out.println("Programmende Punktabstand.");
     }

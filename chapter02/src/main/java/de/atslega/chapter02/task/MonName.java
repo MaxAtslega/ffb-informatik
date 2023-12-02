@@ -12,7 +12,7 @@ public class MonName {
 
         if (!(monat >= 1 && monat <= 12)) {
             System.out.println("Der Monat ist Ungültig.");
-        }else {
+        } else {
             String monatsname = switch (monat) {
                 case 1 -> "Januar";
                 case 2 -> "Februar";
@@ -28,7 +28,7 @@ public class MonName {
                 case 12 -> "Dezember";
                 default -> "Ungültig";
             };
-            System.out.println("Der "+ monat + ". Monat heißt "+ monatsname);
+            System.out.println("Der " + monat + ". Monat heißt " + monatsname);
         }
 
 

@@ -13,12 +13,12 @@ public class SumA {
 
         int i = 1;
         int sum = 0;
-        while (sum <= grenzwert){
-            sum+=i;
+        while (sum <= grenzwert) {
+            sum += i;
             i++;
         }
 
-        System.out.println("Nach " + (i-1) + " Gliedern ist " + grenzwert + " erreicht. Die Summe ist " + sum);
+        System.out.println("Nach " + (i - 1) + " Gliedern ist " + grenzwert + " erreicht. Die Summe ist " + sum);
         System.out.println("Programmende SumA");
     }
 }

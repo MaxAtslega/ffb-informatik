@@ -20,11 +20,11 @@ public class Wuerfel {
         this.seiteA = cSeiteA >= 0 ? cSeiteA : 0;
     }
 
-    public void showOberFlaeche(){
+    public void showOberFlaeche() {
         return;
     }
 
-    public void showVolumen(){
+    public void showVolumen() {
         return;
     }
 }

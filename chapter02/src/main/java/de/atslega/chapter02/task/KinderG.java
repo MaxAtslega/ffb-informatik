@@ -15,7 +15,7 @@ public class KinderG {
 
         double kindergeld = 0;
 
-        if (jahreseinkommen < 45000.00){
+        if (jahreseinkommen < 45000.00) {
             if (anzahlKinder == 1) {
                 kindergeld += 70.0;
             }
@@ -24,10 +24,10 @@ public class KinderG {
                 kindergeld += 70.0 + 130.0;
             }
 
-            if ( anzahlKinder >= 3) {
+            if (anzahlKinder >= 3) {
                 kindergeld += 70.0 + 130.0 + 220.0;
 
-                kindergeld += 240.0*(anzahlKinder-3);
+                kindergeld += 240.0 * (anzahlKinder - 3);
             }
         } else {
             if (anzahlKinder == 1) {
@@ -38,10 +38,10 @@ public class KinderG {
                 kindergeld += 70.0 + 70.0;
             }
 
-            if ( anzahlKinder >= 3) {
+            if (anzahlKinder >= 3) {
                 kindergeld += 70.0 + 70.0 + 140.0;
 
-                kindergeld += 140.0*(anzahlKinder-3);
+                kindergeld += 140.0 * (anzahlKinder - 3);
             }
 
         }

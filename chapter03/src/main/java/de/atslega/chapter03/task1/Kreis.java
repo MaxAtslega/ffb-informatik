@@ -18,18 +18,18 @@ public class Kreis extends Form {
         this.radius = radius >= 0 ? radius : 0;
     }
 
-    public void showFlaeche(){
+    public void showFlaeche() {
         return;
     }
 
-    public void showUmfang(){
+    public void showUmfang() {
         return;
     }
 
     public Graphics2D draw(Graphics g) {
         Graphics2D g2d = (Graphics2D) g;
-        g2d.drawOval(getX(), getY(), (radius+radius), (radius+radius));
+        g2d.drawOval(getX(), getY(), (radius + radius), (radius + radius));
 
-        return  g2d;
+        return g2d;
     }
 }

@@ -7,7 +7,7 @@ public class GenericDoubleNode<T> {
     private GenericDoubleNode<T> previous = null;
     private GenericDoubleNode<T> next = null;
 
-    public GenericDoubleNode(T content, GenericDoubleNode<T> previous, GenericDoubleNode<T> next){
+    public GenericDoubleNode(T content, GenericDoubleNode<T> previous, GenericDoubleNode<T> next) {
         this.content = content;
         this.previous = previous;
         this.next = next;

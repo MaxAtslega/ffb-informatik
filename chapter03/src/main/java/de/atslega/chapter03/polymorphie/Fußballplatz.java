@@ -4,7 +4,7 @@ public class Fußballplatz {
     private double prozentAufschlag;
 
 
-    public double gibGesamtgebuehr(){
+    public double gibGesamtgebuehr() {
         return 0.0;
     }
 }

@@ -16,7 +16,7 @@ public class Subtraktion {
 
         ergebnis = zahl1 - zahl2;
 
-        System.out.println("Das Ergebnis der Subtraktion "+ zahl1+ "-" + zahl2 + " ist "+ ergebnis);
+        System.out.println("Das Ergebnis der Subtraktion " + zahl1 + "-" + zahl2 + " ist " + ergebnis);
 
         System.out.println("Programmende Subtraktion.");
     }

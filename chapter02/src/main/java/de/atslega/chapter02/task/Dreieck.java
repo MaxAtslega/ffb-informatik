@@ -18,9 +18,10 @@ public class Dreieck {
 
         String message = "nicht konstruierbar.";
 
-        if(seiteA + seiteB > seiteC && seiteA + seiteC > seiteB && seiteB + seiteC > seiteA){
+        if (seiteA + seiteB > seiteC && seiteA + seiteC > seiteB && seiteB + seiteC > seiteA) {
             message = "konstruierbar.";
-        };
+        }
+        ;
 
         System.out.println("Das Dreieck ist " + message);
 

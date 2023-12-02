@@ -14,11 +14,11 @@ public class BenzinV2 {
         System.out.print("gefahrene Strecke in km: ");
         double strecke = Double.parseDouble(input.nextLine());
 
-        if(strecke == 0){
+        if (strecke == 0) {
             System.out.println("Ungültige Strecke eingegeben");
-        }else {
+        } else {
             double durchschnitt = kraftstoff / strecke * 100;
-            System.out.println("Der Durchschnittsverbrauch ist "+ durchschnitt+ " l/100km");
+            System.out.println("Der Durchschnittsverbrauch ist " + durchschnitt + " l/100km");
         }
 
         System.out.println("Programmende Subtraktion.");

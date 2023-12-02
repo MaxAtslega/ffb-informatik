@@ -12,7 +12,7 @@ public class Brief {
 
         double preis = 0;
 
-        if(gewicht <= 20) { //<= = < =
+        if (gewicht <= 20) { //<= = < =
             preis = 1.00;
         } else if (gewicht <= 50) {
             preis = 1.70;
@@ -26,7 +26,7 @@ public class Brief {
             preis = 4.80;
         }
 
-        if(preis != 0){
+        if (preis != 0) {
             System.out.println("Kosten: " + preis + " Euro");
         } else {
             System.out.println("Man kann nur ein Brief unter 1kg verschicken.");

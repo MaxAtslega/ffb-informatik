@@ -10,7 +10,7 @@ public class LinGl {
         System.out.print("A: ");
         int a = Integer.parseInt(input.nextLine());
 
-        if(a == 0) {
+        if (a == 0) {
             System.out.println("Kann nicht gelöst werden");
             return;
         }
@@ -18,7 +18,7 @@ public class LinGl {
         System.out.print("B: ");
         int b = Integer.parseInt(input.nextLine());
 
-        System.out.println("Lösung: x=" + ((-b)/a));
+        System.out.println("Lösung: x=" + ((-b) / a));
 
         System.out.println("Programmende LinGl.");
     }

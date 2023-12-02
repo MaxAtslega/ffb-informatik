@@ -10,9 +10,9 @@ public class Bestell {
         System.out.print("Bestellwert in Euro: ");
         double betrag = Double.parseDouble(input.nextLine());
 
-        if(betrag < 200.0) betrag+= 5.50;
+        if (betrag < 200.0) betrag += 5.50;
 
-        System.out.println("Rechnungsbetrag: "+ betrag);
+        System.out.println("Rechnungsbetrag: " + betrag);
 
         System.out.println("Programmende Bestell.");
 

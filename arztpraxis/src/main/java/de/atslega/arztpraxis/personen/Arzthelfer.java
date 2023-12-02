@@ -11,21 +11,24 @@ public class Arzthelfer extends Angestellter {
         this.arztpraxis = arztpraxis;
     }
 
-    public void patientAufnehemen(Patient patient){
+    public void patientAufnehemen(Patient patient) {
         arztpraxis.getPatienten().add(patient);
     }
-    public void patientInsWartezimmerSchicken(Patient patient){
+
+    public void patientInsWartezimmerSchicken(Patient patient) {
         arztpraxis.getWartezimmer().getPatientenImZimmer().enqueue(patient, patient.isPriority());
     }
-    public void naechstenPatientInsBehandlungszimmerSchicken(Behandlungszimmer behandlungszimmer){
+
+    public void naechstenPatientInsBehandlungszimmerSchicken(Behandlungszimmer behandlungszimmer) {
         for (Behandlungszimmer behandlungszimmerFromList : arztpraxis.getBehandlungszimmer()) {
-            if(behandlungszimmerFromList == behandlungszimmer){
+            if (behandlungszimmerFromList == behandlungszimmer) {
                 behandlungszimmerFromList.setPatient((Patient) arztpraxis.getWartezimmer().getPatientenImZimmer().peek());
                 arztpraxis.getWartezimmer().getPatientenImZimmer().dequeue();
             }
         }
     }
-    public void patientEntfernen(Patient patient){
+
+    public void patientEntfernen(Patient patient) {
         arztpraxis.getPatienten().remove(patient);
     }
 }

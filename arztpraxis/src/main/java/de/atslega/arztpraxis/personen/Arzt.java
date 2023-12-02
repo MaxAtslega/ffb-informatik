@@ -3,8 +3,6 @@ package de.atslega.arztpraxis.personen;
 import de.atslega.arztpraxis.Arztpraxis;
 import de.atslega.arztpraxis.raum.Behandlungszimmer;
 
-import java.util.ArrayList;
-
 public class Arzt extends Angestellter {
     private String fachgebiet;
     private Behandlungszimmer aktuellesBehandlungszimer;
@@ -16,18 +14,20 @@ public class Arzt extends Angestellter {
         this.arztpraxis = arztpraxis;
     }
 
-    public void behandlungszimmerBesetzen(Behandlungszimmer behandlungszimmer){
+    public void behandlungszimmerBesetzen(Behandlungszimmer behandlungszimmer) {
         this.aktuellesBehandlungszimer = behandlungszimmer;
         behandlungszimmer.setArzt(this);
     }
 
-    public void behandlungszimmerverlassen(){
+    public void behandlungszimmerverlassen() {
         this.aktuellesBehandlungszimer = null;
     }
-    public void patientBehandeln(Patient patient){
+
+    public void patientBehandeln(Patient patient) {
         aktuellesBehandlungszimer.setPatient(patient);
     }
-    public void patientAufrufen(Patient patient){
+
+    public void patientAufrufen(Patient patient) {
         return;
     }
 }

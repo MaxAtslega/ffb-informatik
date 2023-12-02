@@ -20,11 +20,11 @@ public class Kugel {
         this.radius = cRadius >= 0 ? cRadius : 0;
     }
 
-    public void showOberFlaeche(){
+    public void showOberFlaeche() {
         return;
     }
 
-    public void showVolumen(){
+    public void showVolumen() {
         return;
     }
 }

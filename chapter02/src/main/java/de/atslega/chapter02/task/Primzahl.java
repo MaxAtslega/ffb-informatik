@@ -12,12 +12,12 @@ public class Primzahl {
 
         boolean primzahl = true;
 
-        if(zahl <= 2) {
+        if (zahl <= 2) {
             primzahl = (zahl == 2);
         } else {
             int i = 2;
-            while (i <= zahl / 2){
-                if(zahl % i == 0){
+            while (i <= zahl / 2) {
+                if (zahl % i == 0) {
                     primzahl = false;
                     break;
                 }

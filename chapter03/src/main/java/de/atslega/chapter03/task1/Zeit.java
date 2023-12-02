@@ -3,16 +3,16 @@ package de.atslega.chapter03.task1;
 public class Zeit {
     private String sec;
 
-    public Zeit(int sec){
-        this.sec = sec+"";
+    public Zeit(int sec) {
+        this.sec = sec + "";
     }
 
-    public Zeit(String sec){
+    public Zeit(String sec) {
         this.sec = sec;
     }
 
     public void setSec(int sec) {
-        this.sec = sec+"";
+        this.sec = sec + "";
     }
 
     public void setSec(String sec) {
@@ -23,7 +23,7 @@ public class Zeit {
         return sec;
     }
 
-    public void showTime(){
+    public void showTime() {
         return;
     }
 }

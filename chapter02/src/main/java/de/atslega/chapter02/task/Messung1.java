@@ -10,7 +10,7 @@ public class Messung1 {
         System.out.print("Anzahl der Messwerte: ");
         int anzahl = Integer.parseInt(scanner.nextLine());
 
-        if (anzahl == 0){
+        if (anzahl == 0) {
             System.out.println("Falsche Angabe.");
             System.exit(0);
         }
@@ -18,15 +18,15 @@ public class Messung1 {
         int[] ergebnisse = new int[anzahl];
 
         int summe = 0;
-        for (int i = 1; i < anzahl+1; i++){
-            System.out.print(i+". Ergebnis der Messung: ");
+        for (int i = 1; i < anzahl + 1; i++) {
+            System.out.print(i + ". Ergebnis der Messung: ");
             int ergebnis = Integer.parseInt(scanner.nextLine());
-            ergebnisse[i-1] = ergebnis;
-            summe+=ergebnis;
+            ergebnisse[i - 1] = ergebnis;
+            summe += ergebnis;
         }
 
         StringBuilder stringBuilder = new StringBuilder();
-        for (int e : ergebnisse){
+        for (int e : ergebnisse) {
             stringBuilder.append(e).append(" ");
         }
 
@@ -43,7 +43,7 @@ public class Messung1 {
     public static int getMin(int[] list) {
         int min = list[0];
 
-        for (int number : list){
+        for (int number : list) {
             if (number < min) {
                 min = number;
             }
@@ -55,7 +55,7 @@ public class Messung1 {
     public static int getMax(int[] list) {
         int max = list[0];
 
-        for (int number : list){
+        for (int number : list) {
             if (number > max) {
                 max = number;
             }

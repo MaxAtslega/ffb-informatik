@@ -2,11 +2,11 @@ package de.atslega.chapter03.task1;
 
 import java.awt.*;
 
-public abstract class Form{
+public abstract class Form {
     protected int x;
     protected int y;
 
-    protected Form(int x, int y){
+    protected Form(int x, int y) {
         this.x = x;
         this.y = y;
     }
@@ -19,12 +19,12 @@ public abstract class Form{
         return x;
     }
 
-    public int getY() {
-        return y;
-    }
-
     public void setX(int x) {
         this.x = x;
+    }
+
+    public int getY() {
+        return y;
     }
 
     public void setY(int y) {

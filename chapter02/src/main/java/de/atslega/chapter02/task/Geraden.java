@@ -32,7 +32,7 @@ public class Geraden {
         System.out.print("dy: ");
         double y4 = Double.parseDouble(input.nextLine());
 
-        if((y2 - y1) * (x4 -x3)-(y4-y3)*(x2-x1) == 0 ){
+        if ((y2 - y1) * (x4 - x3) - (y4 - y3) * (x2 - x1) == 0) {
             System.out.println("Die Geraden sind parallel. Kein Schnittpunkt");
         } else {
 
@@ -43,10 +43,10 @@ public class Geraden {
             double n = (x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4);
 
             // Koordinaten des Schnittpunktes
-            double x = zx/n;
-            double y = zy/n;
+            double x = zx / n;
+            double y = zy / n;
 
-            System.out.println("Schnittpunkt: x=" + x +"; y=" +y);
+            System.out.println("Schnittpunkt: x=" + x + "; y=" + y);
         }
 
         System.out.println("Programmende Geraden");
