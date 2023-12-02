@@ -1,12 +1,10 @@
 package de.atslega.arztpraxis.personen;
 
-import de.atslega.arztpraxis.queue.Prioritizable;
 
-public class Patient extends Person implements Prioritizable {
+public class Patient extends Person {
     private int alter;
     private boolean chronischKrank;
-
-    private final boolean priority;
+    private boolean priority;
 
     public Patient(String name, String geschlecht, int alter, boolean chronischKrank, boolean priority) {
         super(name, geschlecht);
@@ -59,7 +57,6 @@ public class Patient extends Person implements Prioritizable {
         return getName();
     }
 
-    @Override
     public boolean isPriority() {
         return priority;
     }

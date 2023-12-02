@@ -1,7 +1,5 @@
 package de.atslega.arztpraxis.linkedlist;
 
-import de.atslega.arztpraxis.liste.List;
-
 import javax.lang.model.element.Element;
 
 public class LinkedList {

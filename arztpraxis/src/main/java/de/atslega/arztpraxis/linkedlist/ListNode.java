@@ -1,6 +1,5 @@
 package de.atslega.arztpraxis.linkedlist;
 
-import de.atslega.arztpraxis.liste.List;
 
 public class ListNode {
 
