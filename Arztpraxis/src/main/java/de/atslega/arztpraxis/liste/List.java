@@ -1,9 +1,12 @@
 package de.atslega.arztpraxis.liste;
 
+import de.atslega.arztpraxis.queue.ListElement;
+import de.atslega.arztpraxis.stack.ListElementStack;
+
 public class List implements ListInterface {
 
-    private ListElement anchor;
-    private ListElement current;
+    private ListElementStack anchor;
+    private ListElementStack current;
 
     @Override
     public boolean isEmpty() {
@@ -61,7 +64,7 @@ public class List implements ListInterface {
 
     @Override
     public void append(Object pObject) {
-        ListElement newElement = new ListElement(pObject, null, current);
+        ListElementStack newElement = new ListElementStack(pObject, null, current);
 
         if (isEmpty()) {
             anchor = newElement;
@@ -76,8 +79,8 @@ public class List implements ListInterface {
     @Override
     public void insert(Object pObject) {
         if (hasAccess()) {
-            ListElement newElement = new ListElement(pObject, current, current.getBefore());
-            ListElement previousElement = current.getBefore();
+            ListElementStack newElement = new ListElementStack(pObject, current, current.getBefore());
+            ListElementStack previousElement = current.getBefore();
 
             if (previousElement != null) {
                 previousElement.setNext(newElement);
@@ -110,8 +113,8 @@ public class List implements ListInterface {
     @Override
     public void remove() {
         if (hasAccess()) {
-            ListElement previousElement = current.getBefore();
-            ListElement nextElement = current.getNext();
+            ListElementStack previousElement = current.getBefore();
+            ListElementStack nextElement = current.getNext();
 
             if (previousElement != null) {
                 previousElement.setNext(nextElement);
@@ -131,7 +134,7 @@ public class List implements ListInterface {
     @Override
     public String display() {
         StringBuilder result = new StringBuilder();
-        ListElement currentElement = anchor;
+        ListElementStack currentElement = anchor;
 
         while (currentElement != null) {
             result.append(currentElement.getContent().toString()).append(" ");

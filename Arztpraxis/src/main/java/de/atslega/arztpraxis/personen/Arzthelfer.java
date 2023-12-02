@@ -1,6 +1,7 @@
 package de.atslega.arztpraxis.personen;
 
 import de.atslega.arztpraxis.Arztpraxis;
+import de.atslega.arztpraxis.queue.Prioritizable;
 import de.atslega.arztpraxis.raum.Behandlungszimmer;
 
 public class Arzthelfer extends Angestellter {
@@ -15,12 +16,13 @@ public class Arzthelfer extends Angestellter {
         arztpraxis.getPatienten().add(patient);
     }
     public void patientInsWartezimmerSchicken(Patient patient){
-        arztpraxis.getWartezimmer().getPatientenImZimmer().add(patient);
+        arztpraxis.getWartezimmer().getPatientenImZimmer().enqueue(patient);
     }
-    public void patientInsBehandlungszimmerSchicken(Patient patient, Behandlungszimmer behandlungszimmer){
+    public void nächstenPatientInsBehandlungszimmerSchicken(Behandlungszimmer behandlungszimmer){
         for (Behandlungszimmer behandlungszimmerFromList : arztpraxis.getBehandlungszimmer()) {
             if(behandlungszimmerFromList == behandlungszimmer){
-                behandlungszimmerFromList.setPatient(patient);
+                behandlungszimmerFromList.setPatient((Patient) arztpraxis.getWartezimmer().getPatientenImZimmer().front());
+                arztpraxis.getWartezimmer().getPatientenImZimmer().dequeue();
             }
         }
     }

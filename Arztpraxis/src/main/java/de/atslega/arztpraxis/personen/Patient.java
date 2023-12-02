@@ -1,13 +1,25 @@
 package de.atslega.arztpraxis.personen;
 
-public class Patient extends Person {
+import de.atslega.arztpraxis.queue.Prioritizable;
+
+public class Patient extends Person implements Prioritizable {
     private int alter;
     private boolean chronischKrank;
+
+    private final boolean priority;
+
+    public Patient(String name, String geschlecht, int alter, boolean chronischKrank, boolean priority) {
+        super(name, geschlecht);
+        this.alter = alter;
+        this.chronischKrank = chronischKrank;
+        this.priority = priority;
+    }
 
     public Patient(String name, String geschlecht, int alter, boolean chronischKrank) {
         super(name, geschlecht);
         this.alter = alter;
         this.chronischKrank = chronischKrank;
+        this.priority = false;
     }
 
     public void beiPraxisAnmelden(){
@@ -40,5 +52,15 @@ public class Patient extends Person {
 
     public void setChronischeKrank(boolean chronischKrank) {
         this.chronischKrank = chronischKrank;
+    }
+
+    @Override
+    public String toString() {
+        return getName();
+    }
+
+    @Override
+    public boolean isPriority() {
+        return priority;
     }
 }
