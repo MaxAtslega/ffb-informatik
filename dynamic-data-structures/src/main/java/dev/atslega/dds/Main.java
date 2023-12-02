@@ -1,4 +1,4 @@
-package dev.atslega.task;
+package dev.atslega.dds;
 
 public class Main {
     public static void main(String[] args) {
