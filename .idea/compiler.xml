@@ -8,7 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="chapter01" />
         <module name="chapter02" />
-        <module name="rennschnecke" />
+        <module name="dynamic-data-structures" />
         <module name="Arztpraxis" />
         <module name="Rennschnecke" />
         <module name="arztpraxis" />
@@ -17,6 +17,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="chapter-01" target="1.5" />
+      <module name="rennschnecke" target="19" />
+      <module name="Task" target="19" />
     </bytecodeTargetLevel>
   </component>
 </project>
