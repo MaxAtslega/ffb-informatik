@@ -8,6 +8,13 @@ Chapter 01: Grundlagen in Java
 
 Chapter 02: Kontrollstrukturen
 
+Chapter 03: Algorithmen
+
+Arztpraxis: Aufgabe aus dem Unterricht
+
+Dynamische Datenstrukturen: Aufgabe aus dem Unterricht
+
+
 ## Anforderungen
 
 Du benötigst Java version 8 oder höher
